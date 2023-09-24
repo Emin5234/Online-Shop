@@ -4,13 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gymtastisch</title>
+
+
+    <style>
+
+
+        .product {
+            display: inline-block;
+            margin: 20px;
+            text-align: center; }
+        .product img {
+            max-width: 200px;  }
+    </style>
 </head>
 <body>
-    <h1>Willkommen auf Gymtastisch!</h1>
-    <p>Hier finden sie die Passenden Fitnessartikel für sich.</p>
+             <h1>Willkommen auf Gymtastisch!</h1>
+    <p>Hier finden Sie die passenden Fitnessartikel für sich.</p>
+
+    <div class="product">
+        <img src="produkt1.jpg" alt="Produkt 1">
+        <p>Produkt 1 Beschreibung: Einnahme täglich. Steigert die Leistungen im Training</p>
+        <p>Preis: 19,99 €</p>
+        <button onclick="kaufen('Produkt 1', 19.99)">Kaufen</button>
+    </div>
+    
+    <div class="product">
+        <img src="produkt2.1.jpg" alt="Produkt 2">
+        <p>Produkt 2 Beschreibung: Hilft den Täglichen Proteinbedarf zu decken.</p>
+        <p>Preis: 39,99 €</p>
+        <button onclick="kaufen('Produkt 2', 29.99)">Kaufen</button>
+    </div>
+    
+    <div class="product">
+        <img src="produkt3.jpg" alt="Produkt 3">
+        <p>Produkt 3 Beschreibung: hochwertiges Multivitaminpräparat mit 13 relevanten Vitaminen für den Muskelaufbau – von Vitamin D und C über Vitamin B bis Folsäure</p>
+        <p>Preis: 59,99 €</p>
+        <button onclick="kaufen('Produkt 3', 39.99)">Kaufen</button>
+    </div>
 
     <script>
-        alert("Willkommen auf Gymtastisch!");
+
+alert("Willkommen auf Gymtastisch!");
+
+        function kaufen(produkt, preis) {
+            alert("Sie haben " + produkt + " für " + preis + " € gekauft.");
+        }
     </script>
 </body>
 </html>
