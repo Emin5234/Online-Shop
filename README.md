@@ -1,4 +1,6 @@
 # Online-Shop
+im Shop handelt es sich um 3 übliche Nahrungsergänzungsmittel für Kraftsportler, die zum Verkauf angeboten werden
+
 Der Online-Shop bietet folgende Funktionen mit sich
 
 1.Mehrsprachige Unterstützung: Die Webseite bietet Unterstützung für verschiedene Sprachen, darunter Deutsch, Englisch und Spanisch, mit Links zur Auswahl der gewünschten Sprache.
@@ -17,4 +19,3 @@ Der Online-Shop bietet folgende Funktionen mit sich
 
 8.Benutzerfreundliche Schnittstelle: Die Benutzeroberfläche ist klar strukturiert und benutzerfreundlich, wodurch Benutzer leicht navigieren und Produkte suchen können.
 
-im Shop handelt es sich um 3 übliche Nahrungsergänzungsmittel für Kraftsportler.
