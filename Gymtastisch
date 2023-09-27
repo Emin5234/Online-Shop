@@ -32,11 +32,6 @@
              <h1>Willkommen auf Gymtastisch!</h1>
     <p>Hier finden Sie die passenden Fitnessartikel für sich.</p>
 <h2>Impressum</h2>
-<p>Firmenname: Gymtastisch GmbH</p>
-<p>Vertretungsberechtigte Person: Emin Öztürk</p>
-<p>Adresse: Moorwisch 5, 22547 Hamburg</p>
-<p>Telefon: 015203108164</p>
-<p>E-Mail: 52emin.oeztuerk@gmail.com</p>
 
     <div class="product">
         <img src="produkt1.jpg" alt="Produkt 1">
@@ -58,6 +53,14 @@
         <p>Preis: 59,99 €</p>
         <button onclick="kaufen('Produkt 3', 39.99)">Kaufen</button>
     </div>
+   
+<h2>Impressum</h2>
+<p>Firmenname: Gymtastisch GmbH</p>
+<p>Vertretungsberechtigte Person: Emin Öztürk</p>
+<p>Adresse: Moorwisch 5, 22547 Hamburg</p>
+<p>Telefon: 015203108164</p>
+<p>E-Mail: 52emin.oeztuerk@gmail.com</p>
+
 
     <script>
 var database = [
