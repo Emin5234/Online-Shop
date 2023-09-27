@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gymtastisch</title>
-
-
+<link rel="Preload" as="image" href="Produkt1.jpg">
+<link rel="Preload" as="image" href="Produkt2.1.jpg">
+<link rel="Preload" as="image" href="Produkt3.jpg">
     <style>
 
 
@@ -18,8 +19,24 @@
     </style>
 </head>
 <body>
+<div>
+<a href="index.html">Deutsch</a> | <a href="index_en.html">Englisch</a> | <a href="index_es.html">Spanisch</a>
+</div>
+<form>
+<input type="text" id="search-input" placeholder="Produktsuche. . .">
+<button type="button" onclick="search()">suchen</button>
+</form>
+
+<div id="search-results"></div>
+
              <h1>Willkommen auf Gymtastisch!</h1>
     <p>Hier finden Sie die passenden Fitnessartikel für sich.</p>
+<h2>Impressum</h2>
+<p>Firmenname: Gymtastisch GmbH</p>
+<p>Vertretungsberechtigte Person: Emin Öztürk</p>
+<p>Adresse: Moorwisch 5, 22547 Hamburg</p>
+<p>Telefon: 015203108164</p>
+<p>E-Mail: 52emin.oeztuerk@gmail.com</p>
 
     <div class="product">
         <img src="produkt1.jpg" alt="Produkt 1">
@@ -43,7 +60,48 @@
     </div>
 
     <script>
+var database = [
+{ name: "Produkt 1", beschreibung: "Beschreibung von Produkt 1" },
+{ name: "Produkt 2", beschreibung: "Beschreibung von Produkt 2" },
+{ name: "Produkt 3", beschreibung: "Beschreibung von Produkt 3" },
 
+function search() {
+var suchbegriff = document.getElementById("search-input").value.toLowerCase();
+    var ergebnisse = [];
+
+for (var i = 0; i < datenbank.length; i++) {
+        var produkt = datenbank[i];
+        if (produkt.name.toLowerCase().includes(suchbegriff) || produkt.beschreibung.toLowerCase().includes(suchbegriff)) {
+            ergebnisse.push(produkt);}}
+
+    anzeigenSuchergebnisse(ergebnisse);}
+
+
+function anzeigenSuchergebnisse(ergebnisse) {
+    var ergebnisContainer = document.getElementById("search-results");
+    ergebnisContainer.innerHTML = ""; // Löschen Sie den Inhalt des Container-Elements
+
+    if (ergebnisse.length === 0) {
+        ergebnisContainer.innerHTML = "Keine Ergebnisse gefunden.";}                                                        
+      else {
+        for (var i = 0; i < ergebnisse.length; i++) {
+            var ergebnis = ergebnisse[i];
+            var ergebnisElement = document.createElement("div");
+            ergebnisElement.textContent = ergebnis.name + ": " + ergebnis.beschreibung;
+            ergebnisContainer.appendChild(ergebnisElement); }}}
+
+
+
+
+var userlanguage = Navigator. Language || navigator.userLanguage;
+var LanguageUrls = {
+   'de' : 'index.html',
+   'en' : 'index_en.html'
+   'es' : 'index_es.html'
+};
+
+var redirectUrl = LanguageUrls[userLanguage] || 'index.html';
+window.location.href = redirectUrl;
 alert("Willkommen auf Gymtastisch!");
 
         function kaufen(produkt, preis) {
