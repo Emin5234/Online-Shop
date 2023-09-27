@@ -64,7 +64,7 @@ var database = [
 { name: "Produkt 1", beschreibung: "Beschreibung von Produkt 1" },
 { name: "Produkt 2", beschreibung: "Beschreibung von Produkt 2" },
 { name: "Produkt 3", beschreibung: "Beschreibung von Produkt 3" },
-
+];
 function search() {
 var suchbegriff = document.getElementById("search-input").value.toLowerCase();
     var ergebnisse = [];
@@ -93,10 +93,10 @@ function anzeigenSuchergebnisse(ergebnisse) {
 
 
 
-var userlanguage = Navigator. Language || navigator.userLanguage;
+var userlanguage = navigator. Language || navigator.userLanguage;
 var LanguageUrls = {
    'de' : 'index.html',
-   'en' : 'index_en.html'
+   'en' : 'index_en.html',
    'es' : 'index_es.html'
 };
 
